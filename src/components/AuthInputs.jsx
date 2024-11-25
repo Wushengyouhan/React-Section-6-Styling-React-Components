@@ -36,7 +36,7 @@ export default function AuthInputs() {
         <p className="paragraph">
           <Input
             label="Email"
-            $invalid={emailNotValid}
+            invalid={emailNotValid}
             type="email"
             onChange={(event) => handleInputChange("email", event.target.value)}
           />
@@ -44,7 +44,7 @@ export default function AuthInputs() {
         <p>
           <Input
             label="Password"
-            $invalid={passwordNotValid}
+            invalid={passwordNotValid}
             type="password"
             onChange={(event) =>
               handleInputChange("password", event.target.value)
